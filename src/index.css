@@ -1,13 +1,87 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto+Mono&family=Roboto:wght@300&display=swap');
+
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: Inter, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --orange: #F55A5A 
+}
+
+.App-header {
+  background: var(--orange);
+  height: 3.438rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-header > i {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.header-title {
+  color: #fff;
+  margin-left: 0.5rem;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem;
+}
+
+.card-body {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.card-image {
+  width: 8rem;
+  height: 10.5rem;
+  border-radius: 5px;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+
+.location {
+  font-size: 0.64rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.location > span {
+  text-transform: uppercase;
+}
+
+.location > i {
+  font-size: 0.64rem;
+  margin-right: 0.25rem;
+  color: var(--orange);
+}
+
+.maps-link {
+  color: #918E9B;
+  margin-left: 0.75rem;
+}
+
+.location-name {
+  font-size: 1.563rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  margin-top: 0.563rem;
+  width: 20.375rem;
+  font-weight: 400;
+  font-size: 0.75rem;
 }
